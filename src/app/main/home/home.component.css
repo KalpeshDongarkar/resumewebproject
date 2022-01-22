@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Questrial&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -24,75 +24,85 @@ h2 {
 
 p {
   font-size: 20px;
-  margin: 15px;
+  margin: 12px;
 }
 img {
   height: 100px;
   width: 100px;
 }
 .container {
-    justify-content: center;
+  justify-content: center;
 }
 .flex {
-    display: flex;
+  display: flex;
 }
 .flexwrap {
-    word-wrap: break-word;
+  word-wrap: break-word;
 }
 .banner {
-    padding: 15%;
-    text-align: center;
-    justify-content: center;
-    background-color: rgb(229, 235, 240);
+  padding: 15%;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(229, 235, 240);
 }
 .btn {
-    font-size: 18px;
-    margin: 15px;
-    color: rgb(255, 255, 255);
-    padding: 18px;
-    border: none;
-    border-radius: 3px;
-    background-color: blue;
+  font-size: 18px;
+  margin: 15px;
+  color: rgb(255, 255, 255);
+  padding: 18px;
+  border: none;
+  border-radius: 3px;
+  background-color: blue;
 }
 .card-div {
-    margin-left: 15%;
-    margin-right: 15%;
-    justify-content: center;
-    text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .card-div-header h2 {
-    padding: 40px;
-    margin: 15px;
+  padding: 40px;
+  margin: 15px;
 }
-
+.center{
+  text-align: center;
+  justify-content: center;
+}
 .cards {
-    text-align: center;
-    justify-content: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .cards h2 {
-    font-size: 20px;
-    margin: 10px;
+  font-size: 20px;
+  margin: 10px;
 }
 .cards p {
-    font-size: 12px;
-    margin: 15px;
-    margin: 10px;
+  font-size: 12px;
+  margin: 15px;
+  margin: 10px;
 }
 .div-inputs {
-    width: 40%;
-    margin: 1%;
+  width: 40%;
+  margin: 1%;
 }
 .inputs {
-    font-size: 18px;
-    width: 100%;
-    margin: 5px;
-    padding: 10px;
-    border: none;
-    border-radius: 2px;
+  font-size: 18px;
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
 }
 .inputs-label {
-    margin: 5px;
-    padding: 5px;
-    width: 100%;
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+}
+.job{
+  background-color: blueviolet;
+  color: white;
+  padding: 100px;
+}
+.job-seeker {
+  padding: 0px;
+  margin: 0px;
 }
