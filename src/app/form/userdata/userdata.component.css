@@ -18,6 +18,9 @@ body {
   background-color: rgb(242, 244, 252);
   border-radius: 10px;
 }
+.col-50{
+  width: 50%;
+}
 .center{
   justify-content: center;
 }
