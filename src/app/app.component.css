@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0%;
+    /* background-color: rgb(229, 235, 240); */
+    justify-content: center;
+}
+
+.container {
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexwrap {
+    word-wrap: break-word;
+}
+
+.banner {
+    padding: 15%;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(229, 235, 240);
+}
+
+h1 {
+    font-size: 60px;
+    margin: 15px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 20px;
+    margin: 15px;
+}
+
+.btn {
+    font-size: 18px;
+    margin: 15px;
+    color: rgb(255, 255, 255);
+    padding: 18px;
+    border: none;
+    border-radius: 3px;
+    background-color: blue;
+}
+
+.card-div {
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-div-header h2 {
+    padding: 40px;
+    margin: 15px;
+}
+
+.cards {
+    text-align: center;
+    justify-content: center;
+}
+
+.cards h2 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.cards p {
+    font-size: 12px;
+    margin: 15px;
+    margin: 10px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.div-inputs {
+    width: 40%;
+    margin: 1%;
+}
+
+.inputs {
+    font-size: 18px;
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+}
+
+.inputs-label {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+}
