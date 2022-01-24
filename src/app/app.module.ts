@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserdataComponent } from './form/userdata/userdata.component';
 import { HomeComponent } from './main/home/home.component';
-import { FormsModule, FormGroup, FormControl} from '@angular/forms';
+import { FormsModule, FormGroup, FormControl, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './Auth/login/login.component';
 import { RegComponent } from './Auth/reg/reg.component';
@@ -23,7 +23,8 @@ import { RegComponent } from './Auth/reg/reg.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

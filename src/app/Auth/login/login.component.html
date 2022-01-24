@@ -1,6 +1,6 @@
-<form class="container" (ngSubmit)="submit()">
+<form [formGroup]="loginForm" class="container" >
   <label class="form-label"><strong>EMAIL ADDRESS<a style="font-size: 13px;" class="error-label">*</a></strong></label>
-  <input required email class="form-input" type="text" id="email" name="email" ngMode>
+  <input  formControlName="email" class="form-input" type="text" id="email">
   <div>
     <div >
       <label class="error-label">Field is Required</label>
@@ -10,7 +10,7 @@
     </div>
   </div>
   <label class="form-label"><strong>PASSWORD<a style="font-size: 13px;" class="error-label">*</a></strong></label>
-  <input #password="" minlength="8" required class="form-input" type="password" id="pass" name="password" ngModel>
+  <input  formControlName="password" class="form-input" type="password" id="pass">
   <div>
     <div>
       <label class="error-label">Field is Required</label>
