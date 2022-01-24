@@ -12,7 +12,7 @@ export class RegComponent implements OnInit {
   formReg:FormGroup = new FormGroup({
     fullname: new FormControl(null,[Validators.required]),
     email:new FormControl(null,[Validators.email,Validators.required]),
-    password: new FormControl(null,[Validators.required, Validators.minLength(8),Validators.maxLength(15)]),
+    password: new FormControl(null,[Validators.required, Validators.minLength(8)]),
     cpassword: new FormControl(null,[Validators.required])},{ validators: MatchingValidatior });
 
   constructor() { }
