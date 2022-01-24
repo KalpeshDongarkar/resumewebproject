@@ -2,21 +2,21 @@
   <label class="form-label"><strong>EMAIL ADDRESS<a style="font-size: 13px;" class="error-label">*</a></strong></label>
   <input  formControlName="email" class="form-input" type="text" id="email">
   <div>
-    <div >
+    <div *ngIf="loginForm.controls.email.errors && loginForm.controls.email.errors.required && loginForm.controls.email.dirty">
       <label class="error-label">Field is Required</label>
     </div>
-    <div>
-      <label class="error-label">Please enter a valid Email</label>
+    <div *ngIf="loginForm.controls.email.invalid && loginForm.controls.email.errors?.email">
+      <label class="error-label">Please enter a valid email</label>
     </div>
   </div>
   <label class="form-label"><strong>PASSWORD<a style="font-size: 13px;" class="error-label">*</a></strong></label>
   <input  formControlName="password" class="form-input" type="password" id="pass">
   <div>
-    <div>
+    <div *ngIf="loginForm.controls.password.errors?.required && loginForm.controls.password.dirty">
       <label class="error-label">Field is Required</label>
     </div>
-    <div>
-      <label class="error-label">Please enter atleast 8 Character</label>
+    <div *ngIf="loginForm.controls.password.errors?.minlength">
+      <label class="error-label">Please enter 8 or more than 8 characters</label>
     </div>
   </div>
   <button class="form-btn" type="submit"><strong>LOGIN</strong></button>
