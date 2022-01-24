@@ -3,13 +3,17 @@
     <div class="imgdiv">
       <h2>Resume Maker</h2>
     </div>
-    <ul class="navlinks lstyle flex">
-      <li><a href="/">Home</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Contact Us</a></li>
-      <li><button>Login</button></li>
-    </ul>
+    <div class="flex">
+      <ul class="navlinks lstyle flex">
+        <li routerLink="/"><a href="/">Home</a></li>
+        <li><a href="">About</a></li>
+        <li class=""><a href="">Contact Us</a></li>
+      </ul>
+      <div> <button routerLink="/login" class="btn">Login</button></div>
+    </div>
+
   </div>
+  <hr>
 </header>
 <router-outlet></router-outlet>
 <footer class="mainfooter">

@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+.alignself {
+  text-align: center;
+  align-content: center;
+}
+.width-100 {
+  width: 100%;
+}
+.div-height {
+  height: 600px;
+}
+.col-10 {
+  width: 10%;
+  align-self: center;
+  text-align: center;
+}
+.col-90 {
+  width: 90%;
+}
+.col-50 {
+  width: 50%;
+  height: auto;
+}
+.col-height-abus1 {
+  height: 750px;
+}
+.container {
+  margin: 5% 40% 5% 40%;
+}
+.flex {
+  display: flex;
+}
+.wrap {
+  word-wrap: break-word;
+}
+.disnone {
+  display: none;
+}
+.lil-text {
+  font-size: 13px;
+  line-height: 1;
+  align-content: center;
+  width: 100%;
+}
+.div-margin {
+  margin: 22px 0 20px 0;
+}
+.div-margin-down {
+  margin: 0 0 20px 0;
+}
+.extramar {
+  margin: 0 0 0 220px;
+}
+.between {
+  justify-content: space-between;
+}
+.pad {
+  padding: 0 120px 0 0;
+}
+.div-padding {
+  padding: 50px 0 50px 0;
+}
+.padding20 {
+  padding: 20px;
+}
+.float-right {
+  float: right;
+  justify-content: right;
+  align-content: right;
+  text-align: right;
+}
+.float-left {
+  float: left;
+}
+.img-cover {
+  object-fit: cover;
+}
+.backgdBlack {
+  background-color: black;
+}
+.backgdWhite {
+  background-color: white;
+}
+.lstyle {
+  list-style: none;
+}
+h1 {
+  font-size: 18px;
+  padding: 0 0 5px 0;
+}
+hr {
+  opacity: 30%;
+}
+li {
+  cursor: pointer;
+}
+.form-label {
+  font-size: 14px;
+  display: block;
+  margin: 15px 0 2px 0;
+}
+.error-label {
+  font-size: 10px;
+  display: inline-block;
+  color: red;
+}
+.form-input {
+  display: block;
+  padding: 13px;
+  font-size: 12px;
+  width: 100%;
+  border-radius: 3px;
+  border: 2px solid rgb(223, 223, 223);
+  background-color: none;
+  outline: none;
+}
+.form-date-input {
+  display: block;
+  padding: 13px;
+  font-size: 12px;
+  border: 0.5px solid rgb(223, 223, 223);
+  max-width: 90px;
+  border-radius: 1px;
+  background-color: none;
+  outline: none;
+}
+.form-btn {
+  display: block;
+  text-align: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  padding: 18px;
+  font-size: 15px;
+  margin: 30px 0 0 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: blue;
+}
+.checkbox {
+  padding: 2px;
+  height: 15px;
+  width: 15px;
+}
+.links {
+  color: rgb(147, 185, 255);
+  text-decoration: underline;
+}

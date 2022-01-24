@@ -1,0 +1,31 @@
+<form class="container" (ngSubmit)="submit()">
+  <label class="form-label"><strong>EMAIL ADDRESS<a style="font-size: 13px;" class="error-label">*</a></strong></label>
+  <input required email class="form-input" type="text" id="email" name="email" ngMode>
+  <div>
+    <div >
+      <label class="error-label">Field is Required</label>
+    </div>
+    <div>
+      <label class="error-label">Please enter a valid Email</label>
+    </div>
+  </div>
+  <label class="form-label"><strong>PASSWORD<a style="font-size: 13px;" class="error-label">*</a></strong></label>
+  <input #password="" minlength="8" required class="form-input" type="password" id="pass" name="password" ngModel>
+  <div>
+    <div>
+      <label class="error-label">Field is Required</label>
+    </div>
+    <div>
+      <label class="error-label">Please enter atleast 8 Character</label>
+    </div>
+  </div>
+  <button class="form-btn" type="submit"><strong>LOGIN</strong></button>
+  <div class="alignself div-margin">
+    <label class="wrap lil-text">I've forgotten my password </label>
+  </div>
+  <div class="alignself div-margin">
+    <label class="wrap lil-text">New to <strong>Resume Maker  </strong><a class="links" routerLink="/register">Create An
+          Account</a></label>
+  </div>
+  <br>
+</form>

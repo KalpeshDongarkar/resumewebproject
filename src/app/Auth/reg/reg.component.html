@@ -1,0 +1,43 @@
+<form class="container" (ngSubmit)="submit()">
+  <label class="form-label"><strong>FULLNAME<a style="font-size: 13px;" class="error-label">*</a></strong></label>
+  <input required email class="form-input" type="text" id="email" name="email" ngMode>
+  <div>
+    <div>
+      <label class="error-label">Field is Required</label>
+    </div>
+  </div>
+  <label class="form-label"><strong>EMAIL ADDRESS<a style="font-size: 13px;" class="error-label">*</a></strong></label>
+  <input #password="" minlength="8" required class="form-input" type="password" id="pass" name="password" ngModel>
+  <div>
+    <div>
+      <label class="error-label">Field is Required</label>
+    </div>
+    <div>
+      <label class="error-label">Please enter a valid Email</label>
+    </div>
+  </div>
+  <label class="form-label"><strong>PASSWORD<a style="font-size: 13px;" class="error-label">*</a></strong></label>
+  <input required email class="form-input" type="text" id="email" name="email" ngMode>
+  <div>
+    <div>
+      <label class="error-label">Field is Required</label>
+    </div>
+    <div>
+      <label class="error-label">Please enter atleast 8 Character</label>
+    </div>
+  </div>
+  <label class="form-label"><strong>CONFIRM PASSWORD<a style="font-size: 13px;"
+        class="error-label">*</a></strong></label>
+  <input required email class="form-input" type="text" id="email" name="email" ngMode>
+  <div>
+    <div>
+      <label class="error-label">Field is Required</label>
+    </div>
+  </div>
+  <button class="form-btn" type="submit"><strong>Register Now</strong></button>
+
+  <div class="alignself div-margin">
+    <label class="wrap lil-text">Already Have an Account<a class="links" routerLink="/login">Login Now</a></label>
+  </div>
+  <br>
+</form>
