@@ -2,12 +2,41 @@
 <form [formGroup]="formReg"  class="container">
   <label class="form-label"><strong>FULLNAME<a style="font-size: 13px;" class="error-label">*</a></strong></label>
   <input formControlName="fullname" required class="form-input" type="text" id="fname">
+  <div>
+    <div *ngIf="formReg.controls.email.errors?.required && formReg.controls.fullname.errors && formReg.controls.fullname.dirty">
+      <label class="error-label">Field is Required</label>
+    </div>
+  </div>
   <label class="form-label"><strong>EMAIL ADDRESS<a style="font-size: 13px;" class="error-label">*</a></strong></label>
   <input formControlName="email" class="form-input" type="text" id="email">
+  <div>
+    <div *ngIf="formReg.controls.email.errors?.required && formReg.controls.email.dirty">
+      <label class="error-label">Field is Required</label>
+    </div>
+    <div *ngIf="formReg.controls.email.invalid">
+      <label class="error-label">Please enter a valid email</label>
+    </div>
+  </div>
   <label class="form-label"><strong>PASSWORD<a style="font-size: 13px;" class="error-label">*</a></strong></label>
   <input  formControlName="password" minlength="8" required class="form-input" type="password" id="pass">
+  <div>
+    <div *ngIf="formReg.controls.password.errors?.required && formReg.controls.password.dirty">
+      <label class="error-label">Field is Required</label>
+    </div>
+    <div *ngIf="formReg.controls.password.errors?.minlength && formReg.controls.password.errors?.maxlength">
+      <label class="error-label">Please enter 8 or more than 8 characters</label>
+    </div>
+  </div>
   <label class="form-label"><strong>CONFIRM PASSWORD<a style="font-size: 13px;" class="error-label">*</a></strong></label>
   <input  formControlName="cpassword" minlength="8" required class="form-input" type="password" id="conpass">
+  <div>
+    <div *ngIf="formReg.controls.cpassword.errors?.required && formReg.controls.password.dirty">
+      <label class="error-label">Field is Required</label>
+    </div>
+    <div *ngIf="formReg.controls.cpassword.errors?.minlength && formReg.controls.password.errors?.maxlength">
+      <label class="error-label">Please enter 8 or more than 8 characters</label>
+    </div>
+  </div>
   <button class="form-btn" type="submit" (click)="Submit()"><strong>Register Now</strong></button>
   <div class="alignself div-margin">
     <label class="wrap lil-text">Already Have an Account<a class="links" routerLink="/login">Login Now</a></label>
